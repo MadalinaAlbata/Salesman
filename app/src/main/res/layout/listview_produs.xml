@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    android:background="@drawable/z">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/textView_titlu"
+    android:textSize="25sp"
+    android:layout_centerHorizontal="true"
+    android:text="List of products"
+    android:textColor="@color/negru"
+    android:layout_marginBottom="5dp"
+
+    />
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/textView_titlu"
+    android:id="@+id/linearlayout"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="10dp"
+    >
+   <TextView
+           android:layout_height="wrap_content"
+           android:layout_width="wrap_content"
+           android:id="@+id/tv_nume"
+           android:text="Name"
+           />
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/tv_price"
+       android:layout_centerHorizontal="true"
+       android:text="Price"/>
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/tv_cantitate"
+       android:layout_alignParentRight="true"
+       android:layout_alignParentEnd="true"
+       android:text="Quantity"/>-->
+</RelativeLayout>
+   <ListView
+       android:id="@+id/listViewCatalog"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="15dp"
+       android:layout_marginRight="15dp"
+       android:dividerHeight="3.0sp"
+       android:divider="@android:color/transparent"
+       android:layout_below="@+id/linearlayout" />
+
+
+</RelativeLayout>

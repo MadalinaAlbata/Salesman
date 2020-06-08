@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/z"
+    tools:context=".AdaugaProdus">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:text="Add a product"
+            android:textColor="@color/negru"
+            />
+    <EditText
+        android:id="@+id/add_nume"
+        android:layout_width="300dp"
+        android:layout_marginTop="20dp"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:hint="Product Name" />
+    <EditText
+        android:id="@+id/add_descriere"
+        android:layout_width="300dp"
+        android:layout_marginTop="20dp"
+        android:background="#fff"
+
+
+        android:layout_height="wrap_content"
+        android:hint="Information"
+        />
+
+    <EditText
+        android:id="@+id/add_price"
+        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_marginTop="20dp"
+        android:background="#fff"
+
+        android:hint="Price"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/add_cantitate"
+        android:layout_width="300dp"
+        android:layout_marginTop="20dp"
+        android:background="#fff"        android:layout_height="wrap_content"
+        android:hint="Quantity"
+        android:inputType="number" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/adauga_produs"
+        android:hint="Add"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@color/albastru"/>
+    </LinearLayout>
+
+</ScrollView>
+</LinearLayout>

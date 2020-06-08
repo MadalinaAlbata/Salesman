@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayCatalog_PtAdmin"
+    android:background="@drawable/z"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView_titlu1"
+        android:textSize="25sp"
+        android:layout_centerHorizontal="true"
+        android:text="List of products"
+        android:textColor="@color/negru"
+        android:layout_marginBottom="5dp"
+        />
+    <Button
+        android:layout_width="40dp"
+        android:id="@+id/addd"
+        android:layout_height="40dp"
+        android:background="@drawable/add_button"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_titlu1"
+        android:id="@+id/linearlayout1"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        >
+
+
+        <ImageView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@mipmap/a2"
+            />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/tv_nume1"
+            android:text="Name"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_price1"
+            android:layout_centerHorizontal="true"
+            android:text="Price"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_cantitate1"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:text="Quantity"/>
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/listViewCatalog1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:dividerHeight="3.0sp"
+        android:divider="@android:color/transparent"
+        android:layout_below="@+id/linearlayout1"
+        android:layout_marginBottom="70dp"/>
+
+
+
+
+</RelativeLayout>

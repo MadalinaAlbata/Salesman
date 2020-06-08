@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/z"
+    tools:context=".DetaliiProdus_Admin">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            >
+
+            <TextView
+                android:id="@+id/text_nume"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Product Name:"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginTop="15dp"
+                />
+            <TextView
+                android:id="@+id/detalii_nume1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/text_nume"
+                android:hint="nume"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                />
+            <TextView
+                android:id="@+id/text_pret"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_nume"
+                android:text="Price:"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_marginTop="30dp"
+                />
+            <EditText
+                android:id="@+id/detalii_pret1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_nume"
+                android:layout_toRightOf="@+id/text_pret"
+                android:hint="pret"
+                android:layout_marginLeft="5dp"
+                android:background="#fff"
+                android:layout_marginTop="30dp"
+
+                />
+            <TextView
+                android:id="@+id/text_descriere"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_pret"
+                android:layout_marginTop="30dp"
+                android:text="Product description:"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                />
+            <EditText
+                android:id="@+id/detalii_descriere1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_pret"
+                android:layout_toRightOf="@+id/text_descriere"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="15dp"
+                android:hint="descriere"
+                android:background="#fff"
+
+                />
+            <TextView
+                android:id="@+id/text_cantitate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detalii_descriere1"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="Quantity avaible:"
+                android:layout_marginTop="27dp"
+                />
+            <EditText
+                android:id="@+id/detalii_cantitate1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detalii_descriere1"
+                android:hint="quant"
+                android:layout_toRightOf="@+id/text_cantitate"
+                android:layout_marginTop="30dp"
+                android:background="#fff"
+
+                android:textSize="15dp"
+                />
+
+            <Button
+                android:id="@+id/update_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="UPDATE"
+                android:layout_below="@+id/text_cantitate"
+                android:layout_marginLeft="100dp"
+                android:background="@color/albastru"
+                android:layout_marginTop="20dp"
+                />
+
+            <Button
+                android:id="@+id/delete_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="DELETE"
+                android:layout_below="@id/text_cantitate"
+                android:layout_toEndOf="@+id/update_button"
+                android:layout_toRightOf="@+id/update_button"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/rosu"
+                />
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>
